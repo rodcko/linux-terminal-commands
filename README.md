@@ -1,5 +1,16 @@
-# comandosTerminalLinux
-Algunos comandos del curso de terminal y línea de comandos de Platzi
+# COMANDOS TERMINAL LINUX
+
+Diferentes comandos de la terminal de Linux, si sabes alguno que no esta aca ¡dejalo en un pull request! :) 
+
+## Organizacion de archivos
+- `ls` lista los archivos
+- `ls -a` lista los archivos ocultos
+- `..` directorio padre
+
+```sh
+.
+```
+directorio al puntero actual
 
 /* ORGANIZACION DE ARCHIVOS */
 ls: lista los archivos
@@ -119,3 +130,7 @@ source .bashrc: para ejecutar el comando
 at: at now +2 minutes (ejecutar algo dentro de 2min) y luego colocamos el comando
 cron; utiliza la crontab (tareas programadas)
 crontab -e: nos permite ver las tareas programadas y agregar nuevas, se ingresa a un archivo donde nos indica el minuto que lo queremos ejecutar, dias y que comando, luego salimos guardando los cambios en el archivo y listo
+
+------------
+- Curso de Introducción a la Terminal y Línea de Comandos: https://platzi.com/clases/terminal/
+- Usuario de Platzi: https://platzi.com/p/rodcko2417/
