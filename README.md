@@ -82,45 +82,41 @@ Diferentes comandos de la terminal de Linux, si sabes alguno que no esta aca ¡d
 - `tar xf backup.tar` lo visualiza
 - `tar czf backup.tgz backup/*` agrupa y comprime los archivos
 
-/* HERRAMIENTAS DE BÚSQUEDA DE ARCHIVOS */
-locate: hace una busqueda en todo el sistema de archivos
-whereis: para buscar comandos
-find: busca en un arbol de directorios, dependiendo los criterios que le ingreses
-find . -user rodcko -perm 644 (buscar todos los archivos que le pertenecen a rodcko y con ciertos permisos)
-find . -type f -mtime +7 -exec cp {} ./backup/ \; (buscar un tipo de archivo file y que haya sido modificado hace 7 dias, y seran copiados a un directorio backup) * comando poderoso para hacer backups
+## Herramientas de busqueda de archivos
+- `locate` hace una busqueda en todo el sistema de archivos
+- `whereis` para buscar comandos
+- `find` busca en un arbol de directorios, dependiendo los criterios que le ingreses
+- `find . -user rodcko -perm 644` buscar todos los archivos que le pertenecen a rodcko y con ciertos permisos
+- `find . -type f -mtime +7 -exec cp {} ./backup/ \;` buscar un tipo de archivo file y que haya sido modificado hace 7 dias, y seran copiados a un directorio backup, comando poderoso para hacer backups
 
-/* HERRAMIENTA PARA INTERACTUAR A TRAVES DE HTTP */
-curl: hacer pedidos directamente, es decir pedidos crudos
-wget: realiza descargas desde servidores http (recursivo)
-curl https://platzi.com (nos devuelve todo el texto)
-curl -v https://platzi.com | more
-curl -v https://platzi.com > /dev/null: solo ve la comunicacion de encabezados http
-wget https://www.url.com: nos descarga el archivo
+## Herramienta para interactuar a traves de HTTP
+- `curl` hacer pedidos directamente, es decir pedidos crudos
+- `wget` realiza descargas desde servidores http (recursivo)
+- `curl https://platzi.com` nos devuelve todo el texto
+- `curl -v https://platzi.com | more` nos devuelve todo el texto
+- `curl -v https://platzi.com > /dev/null` solo ve la comunicacion de encabezados http
+- `wget https://www.url.com` nos descarga el archivo
 
-/* ACCESO SEGURO A OTRAS COMPUTADORAS */
-ssh: terminal segura 
-ssh usuario
-cat .ssh/ (ver la configuracion ssh)
-ls .ssh/ -l (ver llaves publicas y privadas)
-echo "Probando" | mail -s "Probando para Platzi" rodcko@live.com (enviar correos desde la terminal, hay que tener ciertas cosas configuradas)
+## Acceso seguro a otras computadoras
+- `ssh` terminal segura
+- `ssh usuario` terminal segura
+- `cat .ssh/` ver la configuracion ssh
+- `ls .ssh/ -l` ver llaves publicas y privadas
+- `echo "Probando" | mail -s "Probando para Platzi" rodcko@live.com` enviar correos desde la terminal, hay que tener ciertas cosas configuradas
 
-/* VARIABLES DE ENTORNO */
+## Variables de entorno
 Es una definicion global a la que todos los procesos tienen acceso, para tomar info de lo que esta pasando alrededor de, se conoce como $PATH, todos los procesos podrán acceder a ellas, tanto para leerlas como modificarlas, los tipos de asignación son:
-Para un comando: VAR=valor comando
-Para toda la sesión: export VAR=valor
+- Para un comando: VAR=valor comando
+- Para toda la sesión: export VAR=valor
 
-/* COMO Y PARA QUE ESCRIBIR SCRIPTS EN BASH */
+## Como y para que escribir scripts en BASH
 Scripting bash, codigo de programacion
-source .bashrc: para ejecutar el comando
+- `source .bashrc` para ejecutar el comando
 
-/* PROGRAMACION DE TAREAS */
-at: at now +2 minutes (ejecutar algo dentro de 2min) y luego colocamos el comando
-cron; utiliza la crontab (tareas programadas)
-crontab -e: nos permite ver las tareas programadas y agregar nuevas, se ingresa a un archivo donde nos indica el minuto que lo queremos ejecutar, dias y que comando, luego salimos guardando los cambios en el archivo y listo
-
-```sh
-.
-``` 
+## Programacion de tareas
+- `at: at now +2 minutes` ejecutar algo dentro de 2min y luego colocamos el comando
+- `cron` utiliza la crontab (tareas programadas)
+- `crontab -e` nos permite ver las tareas programadas y agregar nuevas, se ingresa a un archivo donde nos indica el minuto que lo queremos ejecutar, dias y que comando, luego salimos guardando los cambios en el archivo y listo
 
 ------------
 - Curso de Introducción a la Terminal y Línea de Comandos: https://platzi.com/clases/terminal/
