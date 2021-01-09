@@ -1,6 +1,6 @@
 # COMANDOS TERMINAL LINUX
 
-Diferentes comandos de la terminal de Linux, si sabes alguno que no esta aca ¡dejalo en un pull request! :tw-1f600:
+Diferentes comandos de la terminal de Linux, si sabes alguno que no esta aca ¡dejalo en un pull request! :fa-smile-o:
 
 ## Organizacion de archivos
 - `ls` lista los archivos
