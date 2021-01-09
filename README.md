@@ -6,49 +6,41 @@ Diferentes comandos de la terminal de Linux, si sabes alguno que no esta aca ¡d
 - `ls` lista los archivos
 - `ls -a` lista los archivos ocultos
 - `..` directorio padre
+- `.` directorio al puntero actual
+- `pwd` identificar el directorio
+- `cd` cambiar de directorio (parametro el directorio que quiero moverme)
+- `mkdir` crear un directorio (parametro del directorio a crear)
+- `ls -l` ver si si son directorio o archivos
+- `rm` borrar un archivo
+- `mv` mover un archivo (mv ../archivoamover.extension .)
+- `rmdir` eliminar un directorio (rmdir nombredirectorio) * primero borrar los archivos dentro de directorio, para poder borrar el directorio
+
+## Manejo de archivos de texto y utilidades interactivas
+- `vim` (i: para escribir, esc para salir del modo edicion, :q para salir de vim, :x salir y guardar cambios)
+- `nano` editor de texto en linux
+
+## Utilidades batch y batch avanzadas
+- `cat` mostrar el contenido completo de un archivo
+- `head` ver solo las primeras lineas del archivo
+- `head -n 5 archivo.txt` mostramos solo 5 lineas del archivo
+- `tail` me muestra las ultimas lineas (lo contrario de head)
+- `grep` busqueda por expresiones regulares
+- `grep expresionabuscar archivo.sql` busqueda avanzada con grep
+- `grep -i expresionabuscarnoimportantomayusominus archivo.sql` busqueda avanzada con grep
+- `grep -i "frasequeterminaren$" archivo.sql` busqueda avanzada con grep
+- `sed` tratamiento de flujos de caracteres
+- `sed 's/palabraareemplazardentrodelarchivo/palabranueva/g' archivo.extension` (s: sustitucion, g: global)
+- `*` no modifica el archivo, solo crea un nuevo flujo con la modificación, pero el archivo sigue teniendo lo que tenia
+- `sed '$d' archivo.extension` borra la ultima linea
+- `awk` tratamiento de texto delimitado
+- `awk -F ';' '{ print $1 }' text.txt` indica que el delimitador de las columnas es el ; y que imprima solo la primer columna
+- `touch` permite crear archivos
+- `touch archivo.txt` ejemplo de como crear archivos
+
 
 ```sh
 .
 ```
-directorio al puntero actual
-
-/* ORGANIZACION DE ARCHIVOS */
-ls: lista los archivos
-ls -a: lista archivos ocultos
-..: directorio padre
-.: directorio al puntero actual
-pwd: identificar el directorio
-cd: cambiar de directorio (parametro el directorio que quiero moverme)
-cd ~: me lleva al home
-cd -: ultimo directorio visitado
-mkdir: crear un directorio (parametro del directorio a crear)
-ls -l: ver si si son directorio o archivos
-cp: copiar un archivo (cp nombrearchivo.extension nuevodirectorio/)
-rm: borrar un archivo
-mv: mover un archivo (mv ../archivoamover.extension .)
-rmdir: eliminar un directorio (rmdir nombredirectorio) * primero borrar los archivos dentro de directorio, para poder borrar el directorio
-
-/* MANEJO DE ARCHIVOS DE TEXTO Y UTILIDADES INTERACTIVAS */7
-vim (i: para escribir, esc para salir del modo edicion, :q para salir de vim, :x salir y guardar cambios)
-nano
-
-/* UTILIDADES BATCH Y BATCH AVANZADAS */
-cat: mostrar el contenido completo de un archivo
-head: ver solo las primeras lineas del archivo
-head -n 5 archivo.txt mostramos solo 5 lineas del archivo
-tail: me muestra las ultimas lineas (lo contrario de head)
-grep: busqueda por expresiones regulares
-grep expresionabuscar archivo.sql
-grep -i expresionabuscarnoimportantomayusominus archivo.sql
-grep -i "frasequeterminaren$" archivo.sql
-sed: tratamiento de flujos de caracteres
-sed 's/palabraareemplazardentrodelarchivo/palabranueva/g' archivo.extension (s: sustitucion, g: global)
-* no modifica el archivo, solo crea un nuevo flujo con la modificación, pero el archivo sigue teniendo lo que tenia
-sed '$d' archivo.extension borra la ultima linea
-awk: tratamiento de texto delimitado
-awk -F ';' '{ print $1 }' text.txt indica que el delimitador de las columnas es el ; y que imprima solo la primer columna
-touch: permite crear archivos
-touch archivo.txt
 
 /* COMUNICACION ENTRE PROCESOS */
 mysql -h ip -u root -p123 < archivo.sql: conectarse al servidor
