@@ -1,6 +1,6 @@
 # COMANDOS TERMINAL LINUX
 
-Diferentes comandos de la terminal de Linux, si sabes alguno que no esta aca ¡dejalo en un pull request! :) 
+Diferentes comandos de la terminal de Linux, si sabes alguno que no esta aca ¡dejalo en un pull request! :tw-1f600:
 
 ## Organizacion de archivos
 - `ls` lista los archivos
@@ -16,7 +16,7 @@ Diferentes comandos de la terminal de Linux, si sabes alguno que no esta aca ¡d
 - `rmdir` eliminar un directorio (rmdir nombredirectorio) * primero borrar los archivos dentro de directorio, para poder borrar el directorio
 
 ## Manejo de archivos de texto y utilidades interactivas
-- `vim` (i: para escribir, esc para salir del modo edicion, :q para salir de vim, :x salir y guardar cambios)
+- `vim` i: para escribir, esc para salir del modo edicion, :q para salir de vim, :x salir y guardar cambios
 - `nano` editor de texto en linux
 
 ## Utilidades batch y batch avanzadas
